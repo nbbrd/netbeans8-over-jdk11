@@ -7,24 +7,53 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     
+    <name>netbeans8-over-jdk11</name>
+    <description>Allow applications based on NetBeans Platform 8 to run on JDK 11</description>
+    <url>https://github.com/nbbrd/netbeans8-over-jdk11</url>
+
+    <organization>
+        <name>National Bank of Belgium</name>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>European Union Public Licence (EUPL)</name>
+            <url>https://joinup.ec.europa.eu/page/eupl-text-11-12</url>
+        </license>
+    </licenses>
+        
     <properties>
         <!-- build -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven-assembly-plugin.version>3.1.0</maven-assembly-plugin.version>
-		
-        <!-- main dependencies -->
-        <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
+
+        <!-- java.activation (JAF) -->
+        <javax.activation-api.version>1.2.0</javax.activation-api.version>
+
+        <!-- java.xml.bind (JAXB) -->
         <jaxb-api.version>2.4.0-b180830.0359</jaxb-api.version>
         <jaxb-runtime.version>2.4.0-b180830.0438</jaxb-runtime.version>
+
+        <!-- java.xml.ws.annotation (Common Annotations) -->
+        <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
+        
+        <!-- java.xml.ws (JAX-WS) -->
+        <!--https://mvnrepository.com/artifact/javax.xml.ws/jaxws-api/2.3.0-->
+        
+        <!-- java.corba (CORBA) -->
+        <!--https://github.com/javaee/glassfish-corba-->
+
+        <!-- java.transaction (JTA) -->
+        <!--https://mvnrepository.com/artifact/javax.transaction/javax.transaction-api/1.3-->
     </properties>
     
     <dependencies>
         <dependency>
-            <groupId>javax.annotation</groupId>
-            <artifactId>javax.annotation-api</artifactId>
-            <version>${javax.annotation-api.version}</version>
+            <groupId>javax.activation</groupId>
+            <artifactId>javax.activation-api</artifactId>
+            <version>${javax.activation-api.version}</version>
         </dependency>
         <dependency>
             <groupId>javax.xml.bind</groupId>
@@ -35,7 +64,13 @@
             <groupId>org.glassfish.jaxb</groupId>
             <artifactId>jaxb-runtime</artifactId>
             <version>${jaxb-runtime.version}</version>
+            <scope>runtime</scope>
         </dependency>                
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>${javax.annotation-api.version}</version>
+        </dependency>
     </dependencies>
 
     <build>

@@ -40,13 +40,13 @@
         <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
         
         <!-- java.xml.ws (JAX-WS) -->
-        <!--https://mvnrepository.com/artifact/javax.xml.ws/jaxws-api/2.3.0-->
+        <jaxws-api.version>2.3.1</jaxws-api.version>
         
         <!-- java.corba (CORBA) -->
         <!--https://github.com/javaee/glassfish-corba-->
 
         <!-- java.transaction (JTA) -->
-        <!--https://mvnrepository.com/artifact/javax.transaction/javax.transaction-api/1.3-->
+        <javax.transaction-api.version>1.3</javax.transaction-api.version>
     </properties>
     
     <dependencies>
@@ -70,6 +70,16 @@
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
             <version>${javax.annotation-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
+            <version>${jaxws-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.transaction</groupId>
+            <artifactId>javax.transaction-api</artifactId>
+            <version>${javax.transaction-api.version}</version>
         </dependency>
     </dependencies>
 

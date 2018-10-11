@@ -17,3 +17,5 @@ This project purpose is to allow applications based on NetBeans Platform 8 to ru
   - `java.xml.bind` (JAXB)
   - `java.activation` (JAF)
   - `java.xml.ws.annotation` (Common Annotations)
+  - `java.xml.ws` (JAX-WS)
+  - `java.transaction` (JTA)

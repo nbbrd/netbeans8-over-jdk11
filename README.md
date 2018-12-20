@@ -1,4 +1,4 @@
-# netbeans8-over-jdk11
+- # netbeans8-over-jdk11
 
 This project purpose is to allow applications based on NetBeans Platform 8 to run on JDK 11.
 
@@ -19,3 +19,4 @@ This project purpose is to allow applications based on NetBeans Platform 8 to ru
   - `java.xml.ws.annotation` (Common Annotations)
   - `java.xml.ws` (JAX-WS)
   - `java.transaction` (JTA)
+- NetBeans Platform class loader fails to load `package-info` classes in some cases. One consequence is that JAXB annotations (such as `XMLSchema`) are not parsed and the resulting XML is incomplete.

@@ -1,4 +1,4 @@
-- # netbeans8-over-jdk11
+# netbeans8-over-jdk11
 
 This project purpose is to allow applications based on NetBeans Platform 8 to run on JDK 11.
 

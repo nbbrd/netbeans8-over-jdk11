@@ -27,7 +27,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <maven-assembly-plugin.version>3.1.0</maven-assembly-plugin.version>
+        <maven-assembly-plugin.version>3.1.1</maven-assembly-plugin.version>
 
         <!-- java.activation (JAF) -->
         <javax.activation-api.version>1.2.0</javax.activation-api.version>
